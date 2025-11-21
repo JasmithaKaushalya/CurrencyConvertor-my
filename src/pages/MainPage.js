@@ -9,6 +9,7 @@ export default function MainPage() {
             with ease. Whether you're traveling abroad, shopping internationally, 
             making business transactions, or simply tracking exchange rates, our tool 
             provides real-time currency conversions for over 150 world currencies.</p>
+            
     </div>
   )
 }
