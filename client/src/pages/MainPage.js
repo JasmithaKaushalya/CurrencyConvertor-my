@@ -19,7 +19,7 @@ export default function MainPage() {
     console.log("Submitting:", {date, sourceCurrency, targetCurrency, ammountInSourceCurrency});
     
     try {
-      const response = await axios.get("http://localhost:5001/convert", {
+      const response = await axios.get("api/convert", {
         params: {
           date,
           sourceCurrency,
@@ -38,7 +38,7 @@ export default function MainPage() {
   useEffect(() => {
     const getCurrencyNames = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/currencies');
+        const response = await axios.get('api/currencies');
         console.log("Frontend received:", response.data);
         setCurrencies(response.data);
       } catch (err) {
